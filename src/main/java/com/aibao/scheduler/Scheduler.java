@@ -1,6 +1,6 @@
 package com.aibao.scheduler;
 
-import com.aibao.service.SynchronizeItemStockTask;
+import com.aibao.service.*;
 import com.google.gson.JsonObject;
 import com.zhonglai.serialization.GsonConstructor;
 import com.zhonglai.task.dto.ScheduledFixedRateType;
@@ -72,7 +72,7 @@ public class Scheduler {
     }
     public void mainInfo(){
 
-     /*   ThreadPoolUtil.createTask(createSysTaskInfo("商品类型 每分钟", SynchronizeItemClsTask.class,SynchronizeItemClsTaskTime));
+        ThreadPoolUtil.createTask(createSysTaskInfo("商品类型 每分钟", SynchronizeItemClsTask.class,SynchronizeItemClsTaskTime));
 
           ThreadPoolUtil.createTask(createSysTaskInfo("付款方式 每分钟", SynchronizePayWayTask.class,SynchronizePayWayTaskTime));
        ThreadPoolUtil.createTask(createSysTaskInfo("营业员 每分钟", SynchronizeSaleManTask.class,SynchronizeSaleManTaskTime));
@@ -90,12 +90,12 @@ public class Scheduler {
 
         ThreadPoolUtil.createTask(createSysTaskInfo("支付流水 每分钟", SynchronizePayFlowTask.class,SynchronizePayFlowTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("销售流水 每分钟",SynchronizeSaleFlowTask.class,SynchronizeSaleFlowTaskTime));
-        ThreadPoolUtil.createTask(createSysTaskInfo("会员充值 每分钟", SynchronizeSavingPlusTask.class,SynchronizeSavingPlusTaskTime));
 
+ ThreadPoolUtil.createTask(createSysTaskInfo("商品库存 每分钟", SynchronizeItemStockTask.class,SynchronizeItemStockTaskTime));
 
         ThreadPoolUtil.createTask(createSysTaskInfo("会员 每分钟", SynchronizeVipInfoTask.class,SynchronizeVipInfoTaskTime));
 
-*/        ThreadPoolUtil.createTask(createSysTaskInfo("商品库存 每分钟", SynchronizeItemStockTask.class,SynchronizeItemStockTaskTime));
+        ThreadPoolUtil.createTask(createSysTaskInfo("会员充值 每分钟", SynchronizeSavingPlusTask.class,SynchronizeSavingPlusTaskTime));
 
         guard();
     }
