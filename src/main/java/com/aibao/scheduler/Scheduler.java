@@ -1,7 +1,6 @@
 package com.aibao.scheduler;
 
-import com.aibao.dto.Sysconfig;
-import com.aibao.service.*;
+import com.aibao.service.SynchronizeItemStockTask;
 import com.google.gson.JsonObject;
 import com.zhonglai.serialization.GsonConstructor;
 import com.zhonglai.task.dto.ScheduledFixedRateType;
@@ -9,7 +8,6 @@ import com.zhonglai.task.dto.SysTaskInfo;
 import com.zhonglai.task.util.ThreadPoolUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -74,26 +72,30 @@ public class Scheduler {
     }
     public void mainInfo(){
 
+     /*   ThreadPoolUtil.createTask(createSysTaskInfo("商品类型 每分钟", SynchronizeItemClsTask.class,SynchronizeItemClsTaskTime));
+
+          ThreadPoolUtil.createTask(createSysTaskInfo("付款方式 每分钟", SynchronizePayWayTask.class,SynchronizePayWayTaskTime));
+       ThreadPoolUtil.createTask(createSysTaskInfo("营业员 每分钟", SynchronizeSaleManTask.class,SynchronizeSaleManTaskTime));
+              ThreadPoolUtil.createTask(createSysTaskInfo("供应商 每分钟", SynchronizeSupcustInfoTask.class,SynchronizeSupcustInfoTaskTime));
+
+
 
         ThreadPoolUtil.createTask(createSysTaskInfo("门店 每分钟", SynchronizeBranchStoreTask.class,SynchronizeBranchStore));
         ThreadPoolUtil.createTask(createSysTaskInfo("会员卡支付列表 每分钟", SynchronizeVipCardPayTask.class,SynchronizeVipCardPayTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("收银人 每分钟", SynchronizeOperatorTask.class,SynchronizeOperatorTaskTime));
 
         ThreadPoolUtil.createTask(createSysTaskInfo("商品品牌 每分钟", SynchronizeBasePPTask.class,SynchronizeBasePPTaskTime));
-        ThreadPoolUtil.createTask(createSysTaskInfo("商品类型 每分钟", SynchronizeItemClsTask.class,SynchronizeItemClsTaskTime));
+
         ThreadPoolUtil.createTask(createSysTaskInfo("商品信息 每分钟", SynchronizeItemInfoTask.class,SynchronizeItemInfoTaskTime));
 
-        ThreadPoolUtil.createTask(createSysTaskInfo("商品库存 每分钟", SynchronizeItemStockTask.class,SynchronizeItemStockTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("支付流水 每分钟", SynchronizePayFlowTask.class,SynchronizePayFlowTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("销售流水 每分钟",SynchronizeSaleFlowTask.class,SynchronizeSaleFlowTaskTime));
+        ThreadPoolUtil.createTask(createSysTaskInfo("会员充值 每分钟", SynchronizeSavingPlusTask.class,SynchronizeSavingPlusTaskTime));
 
-        ThreadPoolUtil.createTask(createSysTaskInfo("付款方式 每分钟", SynchronizePayWayTask.class,SynchronizePayWayTaskTime));
-        ThreadPoolUtil.createTask(createSysTaskInfo("会员充值 每分钟",SynchronizeSavingPlusTask.class,SynchronizeSavingPlusTaskTime));
 
-        ThreadPoolUtil.createTask(createSysTaskInfo("营业员 每分钟", SynchronizeSaleManTask.class,SynchronizeSaleManTaskTime));
-        ThreadPoolUtil.createTask(createSysTaskInfo("供应商 每分钟",SynchronizeSupcustInfoTask.class,SynchronizeSupcustInfoTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("会员 每分钟", SynchronizeVipInfoTask.class,SynchronizeVipInfoTaskTime));
 
+*/        ThreadPoolUtil.createTask(createSysTaskInfo("商品库存 每分钟", SynchronizeItemStockTask.class,SynchronizeItemStockTaskTime));
 
         guard();
     }

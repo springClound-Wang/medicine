@@ -5,8 +5,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /*
 *
@@ -45,7 +43,7 @@ public class SynchronizeSavingPlusTask extends BaseTask{
     protected void putSubPath(JSONArray dates, JsonObject data) {
         String[] str = new String[4];
         str[0] = data.get("flow_id")==null?"":data.get("flow_id").getAsString();
-        str[1] = data.get("plus_count")==null?"0":data.get("plus_count").getAsString();
+        str[1] = data.get("card_cost")==null?"0":data.get("card_cost").getAsString();
         str[2] = data.get("oper_date")==null?"":data.get("oper_date").getAsString();
         str[3] = data.get("branch_no")==null?"All":data.get("branch_no").getAsString();
 

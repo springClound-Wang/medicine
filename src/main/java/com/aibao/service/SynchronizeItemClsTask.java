@@ -17,7 +17,7 @@ public class SynchronizeItemClsTask extends BaseTask{
     protected static Logger logger = Logger.getLogger(SynchronizeItemClsTask.class);
     @Override
     protected String getSubTimePath() {
-        return "lastUpdateTime/modeItemCls";
+        return "lastUpdate/getModeItemClsLastIdItemClsno";
     }
 
     @Override
@@ -34,7 +34,7 @@ public class SynchronizeItemClsTask extends BaseTask{
     @Override
     protected JsonArray getSubData(String time) {
         String sql = "select DISTINCT item_clsno, item_clsname  from "+ Sysconfig.dbName+".bi_t_item_cls where item_flag=0 ";
-        logger.info("会员执行的sql为："+sql);
+        logger.info("商品类型执行的sql为："+sql);
         return this.baseDao.findBysql(sql);
     }
 

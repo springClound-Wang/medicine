@@ -49,9 +49,9 @@ public class SynchronizeItemStockTask extends BaseTask{
     protected void putSubPath(JSONArray dates, JsonObject data) {
         String[] str = new String[4];
         str[0] = data.get("item_no")==null?"":data.get("item_no").getAsString();
-        str[1] = data.get("stock_qty")==null?"0":data.get("stock_qty").getAsString();
-        str[2] = data.get("cost_price")==null?"0":data.get("cost_price").getAsString();
-        str[2] = data.get("branch_no")==null?"All":data.get("branch_no").getAsString();
+        str[1] = data.get("stock_total")==null?"0":data.get("stock_total").getAsString();
+        str[2] = data.get("price")==null?"0":data.get("price").getAsString();
+        str[3] = data.get("branch_no")==null?"All":data.get("branch_no").getAsString();
 
 
         dates.put(str);

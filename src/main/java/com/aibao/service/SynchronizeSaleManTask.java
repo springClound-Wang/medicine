@@ -16,7 +16,7 @@ public class SynchronizeSaleManTask extends BaseTask{
     protected static Logger logger = Logger.getLogger(SynchronizeSaleManTask.class);
     @Override
     protected String getSubTimePath() {
-        return "lastUpdateTime/modeSaleMan";
+        return "lastUpdate/getModeSaleManLastSaleId";
     }
 
     @Override

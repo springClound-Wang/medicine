@@ -8,13 +8,11 @@ import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.zhonglai.dao.BaseDao;
+import com.zhonglai.dto.Message;
 import com.zhonglai.serialization.GsonConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import com.zhonglai.dto.Message;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -61,7 +59,7 @@ public abstract class BaseTask implements Runnable{
      * @param putdata 要放入的数据
      */
     protected abstract void putSubPath(JSONArray dates,JsonObject putdata);
-
+    @Override
     public void run() {
         try {
             logger.info("-----------------任务开始"+getTaskName()+"-----------------");
@@ -77,6 +75,7 @@ public abstract class BaseTask implements Runnable{
         try {
             System.out.println("==========="+host);
             rStr = get(host + getSubTimePath());
+            logger.info(getTaskName() + "rStr:"+rStr);
         } catch (UnirestException e) {
             logger.info(getTaskName() + "上传异常");
             logger.error(e);
@@ -87,7 +86,7 @@ public abstract class BaseTask implements Runnable{
                 logger.info("返回时间为：" + message.getData());
                 JsonArray jsonArray = getSubData(message.getData() + "");
                 if (null != jsonArray && jsonArray.size() != 0) {
-                    logger.info("有值：" + jsonArray);
+                    logger.info(getTaskName() +"有值：" + jsonArray);
                     JSONArray dates = new JSONArray();
                     for (int i = 0; i < jsonArray.size(); i++) {
                         putSubPath(dates, jsonArray.get(i).getAsJsonObject());

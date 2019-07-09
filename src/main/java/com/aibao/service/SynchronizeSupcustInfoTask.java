@@ -5,8 +5,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /*
 *
@@ -19,7 +17,7 @@ public class SynchronizeSupcustInfoTask extends BaseTask{
     protected static Logger logger = Logger.getLogger(SynchronizeSupcustInfoTask.class);
     @Override
     protected String getSubTimePath() {
-        return "lastUpdateTime/modeSupcustInfo";
+        return "lastUpdate/getModeSupcustInfoLastSupcustNo";
     }
 
     @Override

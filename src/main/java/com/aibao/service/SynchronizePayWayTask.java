@@ -5,8 +5,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /*
 *
@@ -19,7 +17,7 @@ public class SynchronizePayWayTask extends BaseTask{
     protected static Logger logger = Logger.getLogger(SynchronizePayWayTask.class);
     @Override
     protected String getSubTimePath() {
-        return "lastUpdateTime/modePaymentInfo";
+        return "lastUpdate/getModePaymentInfoPayWay";
     }
 
     @Override
@@ -35,7 +33,7 @@ public class SynchronizePayWayTask extends BaseTask{
 
     @Override
     protected JsonArray getSubData(String time) {
-        String sql = "select pay_way,pay_name from "+ Sysconfig.dbName+".bi_t_payment_info ";
+        String sql = "select pay_way,pay_name from "+ Sysconfig.dbName+".bi_t_payment_info";
         logger.info("付款方式执行的sql为："+sql);
         return this.baseDao.findBysql(sql);
     }
