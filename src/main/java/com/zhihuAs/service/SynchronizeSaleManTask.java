@@ -40,8 +40,8 @@ public class SynchronizeSaleManTask extends BaseTask{
     @Override
     protected void putSubPath(JSONArray dates, JsonObject data) {
         String[] str = new String[2];
-        str[0] = data.get("cler_no").getAsString();
-        str[1] = data.get("cler_name")==null?"":data.get("cler_name").getAsString();
+        str[0] = data.get("sale_id").getAsString();
+        str[1] = data.get("sale_name")==null?"":data.get("sale_name").getAsString();
         dates.put(str);
     }
 }

@@ -34,8 +34,8 @@ public class SynchronizeVipCardPayTask extends BaseTask{
 
     @Override
     protected JsonArray getSubData(String time) {
-        String sql = "SELECT com_no,item_no,sale_money,DATE_FORMAT(oper_date, '%Y-%m-%d %H:%i:%s') as oper_date ,branch_no FROM " +
-                Sysconfig.dbName+".pos_t_saleflow  WHERE oper_date>'"+time+"'";
+        String sql = "SELECT id,card_id,amount,DATE_FORMAT(pay_time, '%Y-%m-%d %H:%i:%s') as pay_time ,branch_no FROM " +
+                Sysconfig.dbName+".t_rm_card_paylist  WHERE pay_time>'"+time+"'";
 
 
         logger.info("会员卡支付列表执行的sql为："+sql);
@@ -45,10 +45,10 @@ public class SynchronizeVipCardPayTask extends BaseTask{
     @Override
     protected void putSubPath(JSONArray dates, JsonObject data) {
         String[] str = new String[5];
-        str[0] = data.get("com_no")==null?"":data.get("com_no").getAsString();
-        str[1] = data.get("item_no")==null?"":data.get("item_no").getAsString();
-        str[2] = data.get("sale_money")==null?"":data.get("sale_money").getAsString();
-        str[3] = data.get("oper_date")==null?"":data.get("oper_date").getAsString();
+        str[0] = data.get("id")==null?"":data.get("id").getAsString();
+        str[1] = data.get("card_id")==null?"":data.get("card_id").getAsString();
+        str[2] = data.get("amount")==null?"":data.get("amount").getAsString();
+        str[3] = data.get("pay_time")==null?"":data.get("pay_time").getAsString();
         str[4] = data.get("branch_no")==null?"All":data.get("branch_no").getAsString();
 
         dates.put(str);

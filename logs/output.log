@@ -17741,3 +17741,930 @@ JOIN gd_subdb_1ei66l0.bi_t_branch_info ) a group by a.item_no  ) shkc where shkc
   }
 }
 10:48:16 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束会员充值-----------------
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:22:49 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:22:51 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始门店-----------------
+20:22:51 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:137) --------------------启动守护线程---------------------
+20:22:53 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -门店rStr:{"code":1,"data":"0","message":"请求成功"}
+20:22:53 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：0
+20:22:53 [INFO] com.zhihuAs.service.SynchronizeBranchStoreTask.getSubData(SynchronizeBranchStoreTask.java:37) -门店执行的sql为：select branch_name,branch_man,address,branch_no from gd_subdb_1ei8jhb.t_bd_branch_info
+20:22:54 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -门店有值：[{"branch_name":"总部","branch_man":"","address":"","branch_no":"00"},{"branch_name":"总部仓库","branch_man":"","address":"","branch_no":"0001"}]
+20:22:54 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeBranchInfo,
+数据为:[["总部","","","00"],["总部仓库","","","0001"]]
+20:22:54 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -门店同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:22:54 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:22:54 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束门店-----------------
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:23:36 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:23:38 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始商品类型-----------------
+20:23:38 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:138) --------------------启动守护线程---------------------
+20:23:39 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -商品类型rStr:{"code":1,"data":"-1","message":"请求成功"}
+20:23:39 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：-1
+20:23:39 [INFO] com.zhihuAs.service.SynchronizeItemClsTask.getSubData(SynchronizeItemClsTask.java:36) -商品类型执行的sql为：select DISTINCT item_clsno, item_clsname,cls_parent  from gd_subdb_1ei8jhb.t_bd_item_cls where item_flag=0 
+20:23:40 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -商品类型有值：[{"item_clsno":"LB","item_clsname":"其它类别","cls_parent":"L"},{"item_clsno":"LB01","item_clsname":"01","cls_parent":"LB"},{"item_clsno":"LB0103","item_clsname":"03","cls_parent":"LB01"}]
+20:23:40 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeItemCls,
+数据为:[["LB","其它类别","L"],["LB01","01","LB"],["LB0103","03","LB01"]]
+20:23:40 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -商品类型同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:23:39 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:23:40 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束商品类型-----------------
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:24:28 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:24:30 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始供应商-----------------
+20:24:30 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:24:31 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -供应商rStr:{"code":1,"data":"-1","message":"请求成功"}
+20:24:31 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：-1
+20:24:31 [INFO] com.zhihuAs.service.SynchronizeSupcustInfoTask.getSubData(SynchronizeSupcustInfoTask.java:37) -供应商执行的sql为：select  supcust_no,sup_name,sup_man,sup_addr from gd_subdb_1ei8jhb.t_bd_supcust_info
+20:24:32 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -供应商有值：[{"supcust_no":"0","sup_name":"未指定","sup_man":"w","sup_addr":""},{"supcust_no":"01","sup_name":"01","sup_man":"w","sup_addr":"sz"},{"supcust_no":"C001","sup_name":"内部周转","sup_man":"","sup_addr":""},{"supcust_no":"g1","sup_name":"g1","sup_man":"","sup_addr":""},{"supcust_no":"k1","sup_name":"k1","sup_man":"ww","sup_addr":""},{"supcust_no":"special","sup_name":"内部周转","sup_man":"","sup_addr":""}]
+20:24:32 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeSupcustInfo,
+数据为:[["0","未指定","w",""],["01","01","w","sz"],["C001","内部周转","",""],["g1","g1","",""],["k1","k1","ww",""],["special","内部周转","",""]]
+20:24:32 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -供应商同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:24:32 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:24:32 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束供应商-----------------
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:25:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:25:13 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始收银人-----------------
+20:25:13 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:25:14 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -收银人rStr:{"code":1,"data":"0","message":"请求成功"}
+20:25:14 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：0
+20:25:14 [INFO] com.zhihuAs.service.SynchronizeOperatorTask.getSubData(SynchronizeOperatorTask.java:35) -收银人执行的sql为：select cashier_id, cashier_name,branch_no  from gd_subdb_1ei8jhb.t_rm_cashier where cashier_status='正常'
+20:25:15 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -收银人有值：[{"cashier_id":"0001","cashier_name":"0001","branch_no":"ALL"},{"cashier_id":"9999","cashier_name":"后台交易","branch_no":"00"}]
+20:25:15 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeCashier,
+数据为:[["0001","0001","ALL"],["9999","后台交易","00"]]
+20:25:15 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -收银人同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:25:15 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:25:15 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束收银人-----------------
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:25:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:25:54 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始商品品牌-----------------
+20:25:54 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:25:55 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -商品品牌rStr:{"code":1,"data":"0","message":"请求成功"}
+20:25:55 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：0
+20:25:55 [INFO] com.zhihuAs.service.SynchronizeBasePPTask.getSubData(SynchronizeBasePPTask.java:36) -商品品牌执行的sql为：SELECT DISTINCT code_id, code_name  FROM gd_subdb_1ei8jhb.t_bd_base_code WHERE  type_no='PP'
+20:25:56 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -商品品牌有值：[{"code_id":"p1","code_name":"p1"},{"code_id":"PP","code_name":"其它品牌"}]
+20:25:56 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeItemBrand,
+数据为:[["p1","p1"],["PP","其它品牌"]]
+20:25:56 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -商品品牌同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:25:54 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:25:56 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束商品品牌-----------------
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:26:24 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:26:26 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始付款方式-----------------
+20:26:26 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:26:28 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -付款方式rStr:{"code":1,"data":"-1","message":"请求成功"}
+20:26:28 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：-1
+20:26:28 [INFO] com.zhihuAs.service.SynchronizePayWayTask.getSubData(SynchronizePayWayTask.java:37) -付款方式执行的sql为：select pay_way,pay_name from gd_subdb_1ei8jhb.t_bd_payment_info
+20:26:29 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -付款方式有值：[{"pay_way":"BZ","pay_name":"包装箱回收"},{"pay_way":"CHG","pay_name":"抹零"},{"pay_way":"CHQ","pay_name":"人民币支票"},{"pay_way":"CRD","pay_name":"人民币信用卡"},{"pay_way":"DQ","pay_name":"店庆费"},{"pay_way":"GIF","pay_name":"赠送"},{"pay_way":"HKD","pay_name":"港币现金"},{"pay_way":"HKD","pay_name":"港币"},{"pay_way":"JC","pay_name":"进场费"},{"pay_way":"MOY","pay_name":"收支现金"},{"pay_way":"PTB","pay_name":"银行转帐"},{"pay_way":"PTT","pay_name":"托收承付"},{"pay_way":"PTZ","pay_name":"现金支票"},{"pay_way":"RES","pay_name":"社保卡"},{"pay_way":"RMB","pay_name":"人民币现金"},{"pay_way":"RMB","pay_name":"人民币"},{"pay_way":"RPA","pay_name":"应收款"},{"pay_way":"RPA","pay_name":"应收款"},{"pay_way":"RTN","pay_name":"退货"},{"pay_way":"SAV","pay_name":"充值卡"},{"pay_way":"SHP","pay_name":"购物券"},{"pay_way":"USD","pay_name":"美元现金"},{"pay_way":"USD","pay_name":"美元"},{"pay_way":"VIP","pay_name":"会员积分"},{"pay_way":"WXZ","pay_name":"微信支付"},{"pay_way":"ZFB","pay_name":"支付宝"}]
+20:26:29 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModePaymentInfo,
+数据为:[["BZ","包装箱回收"],["CHG","抹零"],["CHQ","人民币支票"],["CRD","人民币信用卡"],["DQ","店庆费"],["GIF","赠送"],["HKD","港币现金"],["HKD","港币"],["JC","进场费"],["MOY","收支现金"],["PTB","银行转帐"],["PTT","托收承付"],["PTZ","现金支票"],["RES","社保卡"],["RMB","人民币现金"],["RMB","人民币"],["RPA","应收款"],["RPA","应收款"],["RTN","退货"],["SAV","充值卡"],["SHP","购物券"],["USD","美元现金"],["USD","美元"],["VIP","会员积分"],["WXZ","微信支付"],["ZFB","支付宝"]]
+20:26:29 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -付款方式同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:26:28 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:26:29 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束付款方式-----------------
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:27:16 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:27:18 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始会员-----------------
+20:27:18 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:27:20 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -会员rStr:{"code":1,"data":"0","message":"请求成功"}
+20:27:20 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：0
+20:27:20 [INFO] com.zhihuAs.service.SynchronizeVipInfoTask.getSubData(SynchronizeVipInfoTask.java:39) -会员执行的sql为：select card_id,vip_name,mobile,DATE_FORMAT(oper_date, '%Y-%m-%d %H:%i:%s') as oper_date,vip_branch_no  FROM gd_subdb_1ei8jhb.t_rm_vip_info  where oper_date>'0'
+20:27:21 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -会员有值：[{"card_id":"00000001","vip_name":"lsz","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"000001","vip_name":"lsz","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"01","vip_name":"01","mobile":"13455555555","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"02","vip_name":"02","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"03","vip_name":"03","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"04","vip_name":"04","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"1231123","vip_name":"","mobile":"","oper_date":"2019-07-09 16:41:56","vip_branch_no":"0001"},{"card_id":"123123123","vip_name":"","mobile":"","oper_date":"2019-07-09 16:40:14","vip_branch_no":"0001"},{"card_id":"12341567","vip_name":"","mobile":"","oper_date":"2019-07-09 16:46:27","vip_branch_no":"0001"},{"card_id":"123456","vip_name":"wzz","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"},{"card_id":"13254654845","vip_name":"lsz","mobile":"","oper_date":"2019-07-09 00:00:00","vip_branch_no":"0001"}]
+20:27:21 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeVipInfo,
+数据为:[["00000001","lsz","","2019-07-09 00:00:00","0001"],["000001","lsz","","2019-07-09 00:00:00","0001"],["01","01","13455555555","2019-07-09 00:00:00","0001"],["02","02","","2019-07-09 00:00:00","0001"],["03","03","","2019-07-09 00:00:00","0001"],["04","04","","2019-07-09 00:00:00","0001"],["1231123","","","2019-07-09 16:41:56","0001"],["123123123","","","2019-07-09 16:40:14","0001"],["12341567","","","2019-07-09 16:46:27","0001"],["123456","wzz","","2019-07-09 00:00:00","0001"],["13254654845","lsz","","2019-07-09 00:00:00","0001"]]
+20:27:21 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -会员同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:27:20 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:27:21 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束会员-----------------
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:27:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:27:54 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始营业员-----------------
+20:27:54 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:27:55 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -营业员rStr:{"code":1,"data":"-1","message":"请求成功"}
+20:27:55 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：-1
+20:27:55 [INFO] com.zhihuAs.service.SynchronizeSaleManTask.getSubData(SynchronizeSaleManTask.java:36) -营业员执行的sql为：SELECT  sale_id,sale_name    FROM gd_subdb_1ei8jhb.t_rm_saleman
+20:27:56 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -营业员有值：[{"sale_id":"9998","sale_name":"9998"},{"sale_id":"9999","sale_name":"缺省营业员"}]
+20:27:56 [ERROR] com.zhihuAs.service.BaseTask.run(BaseTask.java:70) -定时器《营业员》执行异常
+java.lang.NullPointerException
+	at com.zhihuAs.service.SynchronizeSaleManTask.putSubPath(SynchronizeSaleManTask.java:43)
+	at com.zhihuAs.service.BaseTask.execute(BaseTask.java:92)
+	at com.zhihuAs.service.BaseTask.run(BaseTask.java:66)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:31:52 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:31:54 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始营业员-----------------
+20:31:54 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:31:55 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -营业员rStr:{"code":1,"data":"-1","message":"请求成功"}
+20:31:55 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：-1
+20:31:55 [INFO] com.zhihuAs.service.SynchronizeSaleManTask.getSubData(SynchronizeSaleManTask.java:36) -营业员执行的sql为：SELECT  sale_id,sale_name    FROM gd_subdb_1ei8jhb.t_rm_saleman
+20:31:56 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -营业员有值：[{"sale_id":"9998","sale_name":"9998"},{"sale_id":"9999","sale_name":"缺省营业员"}]
+20:31:56 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeSaleMan,
+数据为:[["9998","9998"],["9999","缺省营业员"]]
+20:31:56 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -营业员同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:31:56 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:31:56 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束营业员-----------------
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:41) -************加载applicationPro文件："F:\\wzz\\gitPlace\\yjs-data\\medic\\medicine/configs/param.properties"
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:59) -************配置文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:60) -************Sysconfig文件upRealmName请求地址为：39.96.78.91/gd-data-up/
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:75) -************########### 【开始初始化配置信息】 ###########************
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:76) -*** ### 数据库名为:【gd_subdb_1ei8jhb】 ### ***
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:77) -*** ### token为:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:80) -*** ### Sysconfig.dbName为:【gd_subdb_1ei8jhb】 ### ***
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:81) -*** ### Sysconfig.actionToken:【2157BC59A6417052A15B863C0EEA4507F95EE4256DA384C263250D61EFBDE3F8DDBDDDB2E143851D09599311289298E061AE632211793A4C1433BAE204DDD134】 ### ***
+20:33:11 [INFO] com.zhihuAs.APP.wrongParam(APP.java:82) -************########### 【初始化配置信息完毕】 ###########************
+20:33:13 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:65) ------------------任务开始会员卡支付列表-----------------
+20:33:13 [INFO] com.zhihuAs.scheduler.Scheduler$1.run(Scheduler.java:139) --------------------启动守护线程---------------------
+20:33:14 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:78) -会员卡支付列表rStr:{"code":1,"data":"0","message":"请求成功"}
+20:33:14 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:86) -返回时间为：0
+20:33:14 [INFO] com.zhihuAs.service.SynchronizeVipCardPayTask.getSubData(SynchronizeVipCardPayTask.java:41) -会员卡支付列表执行的sql为：SELECT id,card_id,amount,DATE_FORMAT(pay_time, '%Y-%m-%d %H:%i:%s') as pay_time ,branch_no FROM gd_subdb_1ei8jhb.t_rm_card_paylist  WHERE pay_time>'0'
+20:33:15 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:89) -会员卡支付列表有值：[{"id":1,"card_id":"02","amount":72.0000,"pay_time":"2019-07-09 17:43:05","branch_no":"00"}]
+20:33:15 [INFO] com.zhihuAs.service.BaseTask.execute(BaseTask.java:95) -开始发送数据到:http://39.96.78.91/gd-data-up/update/updateModeCardPaylist,
+数据为:[["1","02","72.0000","2019-07-09 17:43:05","00"]]
+20:33:15 [INFO] com.zhihuAs.service.BaseTask.subData(BaseTask.java:128) -会员卡支付列表同步返回消息为：{
+  "statusCode": 200,
+  "statusText": "OK",
+  "headers": {
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Server": [
+      "Apache-Coyote/1.1"
+    ],
+    "Date": [
+      "Tue, 09 Jul 2019 12:33:15 GMT"
+    ],
+    "Content-Type": [
+      "application/json;charset\u003dUTF-8"
+    ]
+  },
+  "rawBody": {
+    "buf": [
+      123,
+      34,
+      99,
+      111,
+      100,
+      101,
+      34,
+      58,
+      49,
+      44,
+      34,
+      109,
+      101,
+      115,
+      115,
+      97,
+      103,
+      101,
+      34,
+      58,
+      34,
+      -24,
+      -81,
+      -73,
+      -26,
+      -79,
+      -126,
+      -26,
+      -120,
+      -112,
+      -27,
+      -118,
+      -97,
+      34,
+      44,
+      34,
+      100,
+      97,
+      116,
+      97,
+      34,
+      58,
+      110,
+      117,
+      108,
+      108,
+      125
+    ],
+    "pos": 0,
+    "mark": 0,
+    "count": 47
+  },
+  "body": {
+    "jsonObject": {
+      "map": {
+        "code": 1,
+        "data": {},
+        "message": "请求成功"
+      }
+    },
+    "array": false
+  }
+}
+20:33:15 [INFO] com.zhihuAs.service.BaseTask.run(BaseTask.java:67) ------------------任务结束会员卡支付列表-----------------

@@ -71,9 +71,10 @@ public class Scheduler {
         System.out.println("====");
     }
     public void mainInfo(){
+
+        /*
         ThreadPoolUtil.createTask(createSysTaskInfo("门店 每分钟", SynchronizeBranchStoreTask.class,SynchronizeBranchStore));
         ThreadPoolUtil.createTask(createSysTaskInfo("商品类型 每分钟", SynchronizeItemClsTask.class,SynchronizeItemClsTaskTime));
-
         ThreadPoolUtil.createTask(createSysTaskInfo("供应商 每分钟", SynchronizeSupcustInfoTask.class,SynchronizeSupcustInfoTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("收银人 每分钟", SynchronizeOperatorTask.class,SynchronizeOperatorTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("商品品牌 每分钟", SynchronizeBasePPTask.class,SynchronizeBasePPTaskTime));
@@ -81,16 +82,18 @@ public class Scheduler {
         ThreadPoolUtil.createTask(createSysTaskInfo("会员 每分钟", SynchronizeVipInfoTask.class,SynchronizeVipInfoTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("营业员 每分钟", SynchronizeSaleManTask.class,SynchronizeSaleManTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("会员卡支付列表 每分钟", SynchronizeVipCardPayTask.class,SynchronizeVipCardPayTaskTime));
+*/
+        ThreadPoolUtil.createTask(createSysTaskInfo("支付流水 每分钟", SynchronizePayFlowTask.class,SynchronizePayFlowTaskTime));
+
 
        /*
+
+
+
+
         ThreadPoolUtil.createTask(createSysTaskInfo("商品信息 每分钟", SynchronizeItemInfoTask.class,SynchronizeItemInfoTaskTime));
 
 
-
-
-
-
-        ThreadPoolUtil.createTask(createSysTaskInfo("支付流水 每分钟", SynchronizePayFlowTask.class,SynchronizePayFlowTaskTime));
         ThreadPoolUtil.createTask(createSysTaskInfo("销售流水 每分钟",SynchronizeSaleFlowTask.class,SynchronizeSaleFlowTaskTime));
 
  ThreadPoolUtil.createTask(createSysTaskInfo("商品库存 每分钟", SynchronizeItemStockTask.class,SynchronizeItemStockTaskTime));
