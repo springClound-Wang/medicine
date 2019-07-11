@@ -33,7 +33,7 @@ public class SynchronizePayFlowTask extends BaseTask{
 
     @Override
     protected JsonArray getSubData(String time) {
-        String sql = "select com_no,flow_id,flow_no,sale_amount,pay_way,sell_way,DATE_FORMAT(oper_date, '%Y-%m-%d %H:%i:%s') as oper_date,pay_amount,vip_no,card_no,branch_no from "+ Sysconfig.dbName+".pos_t_payflow WHERE oper_date>'"+time+"'";
+        String sql = "select com_no,flow_id,flow_no,sale_amount,pay_way,sell_way,DATE_FORMAT(oper_date, '%Y-%m-%d %H:%i:%s') as oper_date,pay_amount,vip_no,card_no,branch_no from "+ Sysconfig.dbName+".t_rm_payflow WHERE oper_date>'"+time+"'";
         logger.info("支付流水执行的sql为："+sql);
         return this.baseDao.findBysql(sql);
     }

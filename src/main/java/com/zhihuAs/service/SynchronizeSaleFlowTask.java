@@ -1,8 +1,8 @@
 package com.zhihuAs.service;
 
-import com.zhihuAs.dto.Sysconfig;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.zhihuAs.dto.Sysconfig;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 
@@ -33,7 +33,7 @@ public class SynchronizeSaleFlowTask extends BaseTask{
 
     @Override
     protected JsonArray getSubData(String time) {
-        String sql = "SELECT p.branch_no ,p.com_no,p.remote_flag,DATE_FORMAT(p.oper_date, '%Y-%m-%d %H:%i:%s') as oper_date,p.sale_money,p.sale_qnty,p.flow_no,p.item_no,p.sale_man,p.counter_no,d.giv_amount,p.oper_id,p.sell_way FROM "+Sysconfig.dbName+".pos_t_saleflow p,"+Sysconfig.dbName+".pos_t_daySum d WHERE d.item_no=p.item_no and p.oper_date>'"+time+"'";
+        String sql = "SELECT  p.branch_no ,p.com_no,p.remote_flag,DATE_FORMAT(p.oper_date, '%Y-%m-%d %H:%i:%s') as oper_date,p.sale_money,p.sale_qnty,p.flow_no,p.item_no,p.sale_man,p.counter_no,d.giv_amt,p.oper_id,p.sell_way FROM  "+ Sysconfig.dbName+".t_rm_saleflow p left join  (select s.giv_amt,p.flow_no from "+Sysconfig.dbName+".t_rm_daysum s,"+Sysconfig.dbName+".t_rm_saleflow p where s.item_no=p.item_no and p.sell_way='C') d on  d.flow_no=p.flow_no where  p.oper_date>'"+time+"'";
 
         logger.info("销售流水执行的sql为："+sql);
         return this.baseDao.findBysql(sql);
@@ -51,7 +51,7 @@ public class SynchronizeSaleFlowTask extends BaseTask{
         str[6] = data.get("item_no")==null?"":data.get("item_no").getAsString();
         str[7] = data.get("sale_man")==null?"":data.get("sale_man").getAsString();
         str[8] = data.get("counter_no")==null?"0":data.get("counter_no").getAsString();
-        str[9] = data.get("giv_amount")==null?"0":data.get("giv_amount").getAsString();
+        str[9] = data.get("giv_amt")==null?"0":data.get("giv_amt").getAsString();
         str[10] = data.get("oper_id")==null?"":data.get("oper_id").getAsString();
         str[11] = data.get("sell_way")==null?"":data.get("sell_way").getAsString();
         str[12] = data.get("branch_no")==null?"All":data.get("branch_no").getAsString();

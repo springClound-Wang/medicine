@@ -33,7 +33,7 @@ public class SynchronizeSavingPlusTask extends BaseTask{
 
     @Override
     protected JsonArray getSubData(String time) {
-        String sql = "SELECT flow_id,card_cost,oper_date ,branch_no FROM "+Sysconfig.dbName+".pos_t_vip_cost WHERE oper_date>'"+time+"'";
+        String sql = "SELECT flow_id,plus_count,oper_date ,branch_no FROM "+Sysconfig.dbName+".t_rm_saving_plus_record WHERE oper_date>'"+time+"'";
 
         logger.info("会员充值执行的sql为："+sql);
         return this.baseDao.findBysql(sql);
@@ -43,7 +43,7 @@ public class SynchronizeSavingPlusTask extends BaseTask{
     protected void putSubPath(JSONArray dates, JsonObject data) {
         String[] str = new String[4];
         str[0] = data.get("flow_id")==null?"":data.get("flow_id").getAsString();
-        str[1] = data.get("card_cost")==null?"0":data.get("card_cost").getAsString();
+        str[1] = data.get("plus_count")==null?"0":data.get("plus_count").getAsString();
         str[2] = data.get("oper_date")==null?"":data.get("oper_date").getAsString();
         str[3] = data.get("branch_no")==null?"All":data.get("branch_no").getAsString();
 
